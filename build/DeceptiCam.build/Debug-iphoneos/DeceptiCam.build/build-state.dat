@@ -1,0 +1,596 @@
+TDeceptiCam
+v7
+r0
+t319841011.046513
+cCheck dependencies
+cCpResource build/Debug-iphoneos/DeceptiCam.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/Info.plist DeceptiCam-Info.plist
+cCompileXIB /Users/Lars/Documents/iPhone-Apps/DeceptiCam/MainWindow.xib
+cCompileXIB /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCamViewController.xib
+cCopyPNGFile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/in-call-screen.png in-call-screen.png
+cProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dugeeuxmfvfxuzfftrrwygigqsku/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/main.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamAppDelegate.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamViewController.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam normal armv6
+cCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/main.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamAppDelegate.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamViewController.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam normal armv7
+cCreateUniversalBinary /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam normal "armv6 armv7"
+cAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+cAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+cAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+cAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+cAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+cAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+cGenerateDSYMFile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app.dSYM /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam
+cProcessProductPackaging "/Users/Lars/Library/MobileDevice/Provisioning Profiles/B4DDAED4-FF94-4F9A-943C-FA8F15D95309.mobileprovision" /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision
+cTouch /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent
+cCodeSign /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC11C42000000000020BF30
+t1287724098
+s2146096
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004CC110680000000000094AF0
+t1287721064
+s609008
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.h
+c000000004D600E0900000000000001EE
+t1298140681
+s494
+i<UIKit/UIKit.h>
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+c000000004D600E090000000000000AA1
+t1298140681
+s2721
+i"DeceptiCamAppDelegate.h"
+i"DeceptiCamViewController.h"
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.h
+c000000004D600E0900000000000000F4
+t1298140681
+s244
+i<UIKit/UIKit.h>
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+c000000004D600E0900000000000005CA
+t1298140681
+s1482
+i"DeceptiCamViewController.h"
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCamViewController.xib
+c000000004D60158E00000000000053C6
+t1298142606
+s21446
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch
+c000000004D600E0900000000000000BD
+t1298140681
+s189
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/MainWindow.xib
+c000000004D600E090000000000004E4D
+t1298140681
+s20045
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+t1298148211
+s408
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app.dSYM
+t1298142892
+s102
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam
+t1298142892
+s51600
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCamViewController.nib
+t1298142887
+s3153
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/Info.plist
+t1298148210
+s973
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/MainWindow.nib
+t1298142887
+s1687
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/PkgInfo
+t1298148210
+s8
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/ResourceRules.plist
+t1298142885
+s485
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision
+t1298142892
+s7298
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/in-call-screen.png
+t1298142890
+s513090
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent
+t1298148210
+s426
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam
+t1298142892
+s17016
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam.LinkFileList
+c000000004D6016A500000000000001A5
+t1298142885
+s421
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamAppDelegate.o
+t1298142891
+s46600
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamViewController.o
+t1298142891
+s32836
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/main.o
+t1298142891
+s3012
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam
+t1298142892
+s17016
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam.LinkFileList
+c000000004D6016A500000000000001A5
+t1298142885
+s421
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamAppDelegate.o
+t1298142891
+s46752
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamViewController.o
+t1298142891
+s32908
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/main.o
+t1298142891
+s3064
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv6/DeceptiCamAppDelegate.plist
+t1298142891
+s276
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv6/DeceptiCamViewController.plist
+t1298142891
+s276
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv6/main.plist
+t1298142891
+s276
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv7/DeceptiCamAppDelegate.plist
+t1298142892
+s276
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv7/DeceptiCamViewController.plist
+t1298142892
+s276
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv7/main.plist
+t1298142892
+s276
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/in-call-screen.png
+c000000004D6013180000000000074CAC
+t1298141976
+s478380
+
+N/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+c000000004D600E090000000000000169
+t1298140681
+s361
+i<UIKit/UIKit.h>
+
+N/Users/Lars/Library/MobileDevice/Provisioning Profiles/B4DDAED4-FF94-4F9A-943C-FA8F15D95309.mobileprovision
+c000000004D48C2540000000000001C82
+t1296613972
+s7298
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dugeeuxmfvfxuzfftrrwygigqsku/DeceptiCam_Prefix.pch.pth
+t1298142891
+s2793052
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dwsludmfucmrejbdurvvpeacawzx/DeceptiCam_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch.pth
+t1298142890
+s2793736
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch.pth
+t1298142891
+s2793588
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-flxcncdricmemehbhwjxnyutpsyv/DeceptiCam_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-girfqyvkmrgjmffkyklxzzezfpkk/DeceptiCam_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch.pth
+t1298142891
+s2793244
+
+N/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gwooytwfknxcvcgueyqyhchfpkdp/DeceptiCam_Prefix.pch.gch
+t2
+s0
+
+NDeceptiCam-Info.plist
+c000000004D602B720000000000000461
+t1298148210
+s1121
+
+CAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+s319835691.982390
+e319835692.066358
+r1
+xAnalyze
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+lSLF07#2@84"Analyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m319835691#319835692#0(0"0(0#0#76"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m8613973632#1921"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch --analyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv7/DeceptiCamAppDelegate.plist0#
+
+CAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+s319835692.013335
+e319835692.126059
+r1
+xAnalyze
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+lSLF07#2@87"Analyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m319835692#319835692#0(0"0(0#0#79"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m8611772224#1927"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch --analyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv7/DeceptiCamViewController.plist0#
+
+CAnalyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+s319835691.964571
+e319835692.013214
+r1
+xAnalyze
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+lSLF07#2@59"Analyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m319835691#319835692#0(0"0(0#0#51"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m8614335968#1879"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch --analyze /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/StaticAnalyzer/normal/armv7/main.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies319841010#319841010#0(0"0(0#1#0"8635500704#0"0#
+
+CCodeSign /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+s319841010.665473
+e319841011.046470
+r1
+xCodeSign
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+o/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app: replacing invalid existing signature
+lSLF07#2@44"CodeSign build/Debug-iphoneos/DeceptiCam.app319841010#319841011#0(119"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app: replacing invalid existing signature0(0#0#80"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app8632281728#688"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Lars Anderson (47WYENZZ4N)" --resource-rules=/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/ResourceRules.plist --entitlements /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app0#
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamAppDelegate.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamAppDelegate.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835691.593223
+e319835691.827845
+r1
+xCompileC
+xbuild/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamAppDelegate.o
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@84"Compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m319835691#319835691#0(0"0(0#0#76"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m8614110816#1941"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv6 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamAppDelegate.o0#
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamViewController.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamViewController.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835691.594092
+e319835691.824245
+r1
+xCompileC
+xbuild/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamViewController.o
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@87"Compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m319835691#319835691#0(0"0(0#0#79"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m8613375968#1947"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv6 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCamViewController.o0#
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/main.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/main.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835691.592203
+e319835691.825998
+r1
+xCompileC
+xbuild/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/main.o
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@59"Compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m319835691#319835691#0(0"0(0#0#51"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m8614295392#1899"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv6 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamAppDelegate.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamAppDelegate.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835691.819235
+e319835691.939729
+r1
+xCompileC
+xbuild/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamAppDelegate.o
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@84"Compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m319835691#319835691#0(0"0(0#0#76"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m8595921248#1941"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamAppDelegate.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamAppDelegate.o0#
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamViewController.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamViewController.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835691.824374
+e319835691.933785
+r1
+xCompileC
+xbuild/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamViewController.o
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@87"Compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m319835691#319835691#0(0"0(0#0#79"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m8611606656#1947"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/Classes/DeceptiCamViewController.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCamViewController.o0#
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/main.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/main.o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835691.595158
+e319835691.819106
+r1
+xCompileC
+xbuild/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/main.o
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@59"Compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m319835691#319835691#0(0"0(0#0#51"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m8611524096#1899"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -include /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/main.m -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCamViewController.xib
+s319835685.612473
+e319835687.775088
+r1
+xCompileXIB
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCamViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@39"CompileXIB DeceptiCamViewController.xib319835685#319835687#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#73"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCamViewController.xib8613286912#591"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCamViewController.nib /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCamViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/Lars/Documents/iPhone-Apps/DeceptiCam/MainWindow.xib
+s319835685.611767
+e319835687.759864
+r1
+xCompileXIB
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib319835685#319835687#0(0"0(0#0#59"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/MainWindow.xib8611424576#563"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/MainWindow.nib /Users/Lars/Documents/iPhone-Apps/DeceptiCam/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCopyPNGFile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/in-call-screen.png in-call-screen.png
+s319835685.613077
+e319835690.007938
+r1
+xCopyPNGFile
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/in-call-screen.png
+xin-call-screen.png
+lSLF07#2@85"CopyPNGFile build/Debug-iphoneos/DeceptiCam.app/in-call-screen.png in-call-screen.png319835685#319835690#0(0"0(0#0#63"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/in-call-screen.png8610344064#597"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Lars/Documents/iPhone-Apps/DeceptiCam/in-call-screen.png /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/in-call-screen.png0#
+
+CCpResource build/Debug-iphoneos/DeceptiCam.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s319835685.523851
+e319835685.611600
+r1
+xCpResource
+xbuild/Debug-iphoneos/DeceptiCam.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist319835685#319835685#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist7238179819172942848#509"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app0#
+
+CCreateUniversalBinary /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam normal "armv6 armv7"
+s319835692.367392
+e319835692.398540
+r1
+xCreateUniversalBinary
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam
+xnormal
+xarmv6 armv7
+lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/DeceptiCam.app/DeceptiCam normal "armv6 armv7"319835692#319835692#0(0"0(0#0#56"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/armv6 armv78615004256#566"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam -output /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam0#
+
+CGenerateDSYMFile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app.dSYM /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam
+s319835692.398636
+e319835692.473564
+r1
+xGenerateDSYMFile
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app.dSYM
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam
+lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/DeceptiCam.app.dSYM build/Debug-iphoneos/DeceptiCam.app/DeceptiCam319835692#319835692#0(0"0(0#0#91"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam8614940288#389"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/DeceptiCam -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app.dSYM0#
+
+CLd /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam normal armv6
+s319835691.827942
+e319835692.360185
+r1
+xLd
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam
+xnormal
+xarmv6
+lSLF07#2@136"Link /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam319835691#319835692#0(0"0(0#0#0"8610681024#959"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -filelist /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam.LinkFileList -dead_strip -miphoneos-version-min=3.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework MobileCoreServices -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv6/DeceptiCam0#
+
+CLd /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam normal armv7
+s319835691.939864
+e319835692.367195
+r1
+xLd
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam
+xnormal
+xarmv7
+lSLF07#2@136"Link /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam319835691#319835692#0(0"0(0#0#0"8614826208#959"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -filelist /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam.LinkFileList -dead_strip -miphoneos-version-min=3.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework MobileCoreServices -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/Objects-normal/armv7/DeceptiCam0#
+
+CProcessInfoPlistFile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/Info.plist DeceptiCam-Info.plist
+s319841010.611915
+e319841010.617569
+r1
+xProcessInfoPlistFile
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/Info.plist
+xDeceptiCam-Info.plist
+lSLF07#2@29"Process DeceptiCam-Info.plist319841010#319841010#0(0"0(0#0#66"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam-Info.plist8610359104#598"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility DeceptiCam-Info.plist -genpkginfo /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/ResourceRules.plist -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/Info.plist0#
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dugeeuxmfvfxuzfftrrwygigqsku/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s319835690.009858
+e319835691.592080
+r1
+xProcessPCH
+x/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dugeeuxmfvfxuzfftrrwygigqsku/DeceptiCam_Prefix.pch.pth
+xDeceptiCam_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@32"Precompile DeceptiCam_Prefix.pch319835690#319835691#0(0"0(0#0#66"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch8615866336#1750"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv6 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch -o /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dugeeuxmfvfxuzfftrrwygigqsku/DeceptiCam_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-dwsludmfucmrejbdurvvpeacawzx/DeceptiCam_Prefix.pch.gch DeceptiCam_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835690.009166
+e319835691.521262
+r1
+xProcessPCH
+x/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch.pth
+xDeceptiCam_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@32"Precompile DeceptiCam_Prefix.pch319835690#319835691#0(0"0(0#0#66"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch8610827104#1788"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch -o /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-eqgnedenatflebhairbzetyhaury/DeceptiCam_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s319835690.008213
+e319835691.402613
+r1
+xProcessPCH
+x/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch.pth
+xDeceptiCam_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@32"Precompile DeceptiCam_Prefix.pch319835690#319835691#0(0"0(0#0#66"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch8615539968#1788"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv6 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch -o /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-ezbhadqolmrwiwfutokrrdodbmhd/DeceptiCam_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-flxcncdricmemehbhwjxnyutpsyv/DeceptiCam_Prefix.pch.gch DeceptiCam_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-girfqyvkmrgjmffkyklxzzezfpkk/DeceptiCam_Prefix.pch.gch DeceptiCam_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch.pth DeceptiCam_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s319835690.010775
+e319835691.193577
+r1
+xProcessPCH
+x/var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch.pth
+xDeceptiCam_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@32"Precompile DeceptiCam_Prefix.pch319835690#319835691#0(0"0(0#0#66"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch8615668352#1750"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.0 -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-generated-files.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-own-target-headers.hmap -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-all-target-headers.hmap -iquote /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam-project-headers.hmap -F/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/include -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources/armv7 -I/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DerivedSources -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam_Prefix.pch -o /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gvogkrskfpzjidfpinjjmbbjqxmw/DeceptiCam_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Wu/Wul7VYc3H8uPj3jNSJbP-k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DeceptiCam_Prefix-gwooytwfknxcvcgueyqyhchfpkdp/DeceptiCam_Prefix.pch.gch DeceptiCam_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessProductPackaging "/Users/Lars/Library/MobileDevice/Provisioning Profiles/B4DDAED4-FF94-4F9A-943C-FA8F15D95309.mobileprovision" /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision
+s319835692.473698
+e319835692.505019
+r1
+xProcessProductPackaging
+x/Users/Lars/Library/MobileDevice/Provisioning Profiles/B4DDAED4-FF94-4F9A-943C-FA8F15D95309.mobileprovision
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision
+lSLF07#2@194"ProcessProductPackaging "/Users/Lars/Library/MobileDevice/Provisioning Profiles/B4DDAED4-FF94-4F9A-943C-FA8F15D95309.mobileprovision" build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision319835692#319835692#0(0"0(0#0#105"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision8614623936#437"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Lars/Library/MobileDevice/Provisioning Profiles/B4DDAED4-FF94-4F9A-943C-FA8F15D95309.mobileprovision" -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent
+s319841010.654673
+e319841010.665416
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent
+lSLF07#2@184"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent319841010#319841010#0(0"0(0#0#116"/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent8635209888#453"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/DeceptiCam.build/Debug-iphoneos/DeceptiCam.build/DeceptiCam.xcent0#
+
+CTouch /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+s319841010.620009
+e319841010.654539
+r1
+xTouch
+x/Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app
+lSLF07#2@86"Touch /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app319841010#319841010#0(0"0(0#0#0"8632526016#279"    cd /Users/Lars/Documents/iPhone-Apps/DeceptiCam    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Lars/Documents/iPhone-Apps/DeceptiCam/build/Debug-iphoneos/DeceptiCam.app0#
+
