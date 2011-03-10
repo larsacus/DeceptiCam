@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* DeceptiCamAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 655}}";
+			sepNavSelRange = "{210, 0}";
+			sepNavVisRange = "{0, 624}";
+		};
+	};
+	1D3623250D0F684500981E51 /* DeceptiCamAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1092}}";
+			sepNavSelRange = "{655, 0}";
+			sepNavVisRange = "{0, 1704}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* DeceptiCam */ = {
+		activeExec = 0;
+		executables = (
+			46E1740513104589001C311E /* DeceptiCam */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* DeceptiCamViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 632}}";
+			sepNavSelRange = "{748, 0}";
+			sepNavVisRange = "{0, 1065}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 2002}}";
+			sepNavSelRange = "{4216, 0}";
+			sepNavVisRange = "{1222, 3690}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = armv6;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 46E1740513104589001C311E /* DeceptiCam */;
+		activeSDKPreference = iphoneos4.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* DeceptiCam */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* DeceptiCam */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 46E17412131045CA001C311E /* Code sense */;
+		executables = (
+			46E1740513104589001C311E /* DeceptiCam */,
+		);
+		expressions = (
+			"[[self movieFileOutput] isRecording]",
+			"[self movieFileOutput]",
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					607,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					383,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 321167759;
+			PBXWorkspaceStateSaveDate = 321167759;
+		};
+		perUserProjectItems = {
+			46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */ = 46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */;
+			46A152B6131DF3CD00EBBB69 /* PBXTextBookmark */ = 46A152B6131DF3CD00EBBB69 /* PBXTextBookmark */;
+			46A152BA131DF3CD00EBBB69 /* PBXTextBookmark */ = 46A152BA131DF3CD00EBBB69 /* PBXTextBookmark */;
+			46A153F8131F438700EBBB69 /* PBXTextBookmark */ = 46A153F8131F438700EBBB69 /* PBXTextBookmark */;
+			46A15447131F511E00EBBB69 /* PBXBookmark */ = 46A15447131F511E00EBBB69 /* PBXBookmark */;
+			46A1546B131F5A6200EBBB69 /* PBXBookmark */ = 46A1546B131F5A6200EBBB69 /* PBXBookmark */;
+			46A15478131F5B8700EBBB69 /* PBXTextBookmark */ = 46A15478131F5B8700EBBB69 /* PBXTextBookmark */;
+			46EDA0AD1324143400A96613 /* PBXBookmark */ = 46EDA0AD1324143400A96613 /* PBXBookmark */;
+			46EDA1AC13249D7100A96613 /* PBXBookmark */ = 46EDA1AC13249D7100A96613 /* PBXBookmark */;
+			46EDA1AD13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AD13249D7100A96613 /* PBXTextBookmark */;
+			46EDA1AE13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AE13249D7100A96613 /* PBXTextBookmark */;
+			46EDA1AF13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AF13249D7100A96613 /* PBXTextBookmark */;
+			46EDA1B313249D7100A96613 /* PBXTextBookmark */ = 46EDA1B313249D7100A96613 /* PBXTextBookmark */;
+			46EDA1E713249F0F00A96613 /* PlistBookmark */ = 46EDA1E713249F0F00A96613 /* PlistBookmark */;
+			46FB69591328898D005A4A1C /* PBXTextBookmark */ = 46FB69591328898D005A4A1C /* PBXTextBookmark */;
+			46FB695A1328898D005A4A1C /* PBXTextBookmark */ = 46FB695A1328898D005A4A1C /* PBXTextBookmark */;
+			46FB695B1328898D005A4A1C /* PBXTextBookmark */ = 46FB695B1328898D005A4A1C /* PBXTextBookmark */;
+			46FB695C1328898D005A4A1C /* PBXTextBookmark */ = 46FB695C1328898D005A4A1C /* PBXTextBookmark */;
+			46FB695D1328898D005A4A1C /* PBXTextBookmark */ = 46FB695D1328898D005A4A1C /* PBXTextBookmark */;
+		};
+		sourceControlManager = 46E17411131045CA001C311E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	463AFA6F1317692A0019E904 /* LACamManager.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1111, 3874}}";
+			sepNavSelRange = "{5236, 0}";
+			sepNavVisRange = "{3950, 1714}";
+		};
+	};
+	463AFA701317692A0019E904 /* LACamManager.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {958, 572}}";
+			sepNavSelRange = "{277, 0}";
+			sepNavVisRange = "{0, 1032}";
+		};
+	};
+	46A15291131DEFCF00EBBB69 /* LACallButton.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 632}}";
+			sepNavSelRange = "{203, 0}";
+			sepNavVisRange = "{0, 215}";
+		};
+	};
+	46A15292131DEFCF00EBBB69 /* LACallButton.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 633}}";
+			sepNavSelRange = "{948, 0}";
+			sepNavVisRange = "{0, 999}";
+		};
+	};
+	46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* DeceptiCamAppDelegate.h */;
+		name = "DeceptiCamAppDelegate.h: 10";
+		rLen = 0;
+		rLoc = 210;
+		rType = 0;
+		vrLen = 624;
+		vrLoc = 0;
+	};
+	46A152B6131DF3CD00EBBB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* DeceptiCamAppDelegate.m */;
+		name = "DeceptiCamAppDelegate.m: 26";
+		rLen = 0;
+		rLoc = 655;
+		rType = 0;
+		vrLen = 1704;
+		vrLoc = 0;
+	};
+	46A152BA131DF3CD00EBBB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 463AFA701317692A0019E904 /* LACamManager.h */;
+		name = "LACamManager.h: 44";
+		rLen = 0;
+		rLoc = 1658;
+		rType = 0;
+		vrLen = 1659;
+		vrLoc = 0;
+	};
+	46A153D0131F337900EBBB69 /* LACallButtonContainer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {601, 625}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 231}";
+		};
+	};
+	46A153D1131F337900EBBB69 /* LACallButtonContainer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1153, 1287}}";
+			sepNavSelRange = "{2447, 0}";
+			sepNavVisRange = "{1383, 1810}";
+		};
+	};
+	46A153F8131F438700EBBB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A15291131DEFCF00EBBB69 /* LACallButton.h */;
+		name = "LACallButton.h: 12";
+		rLen = 0;
+		rLoc = 203;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	46A15447131F511E00EBBB69 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 46A15442131F50DD00EBBB69 /* 1x1black.png */;
+	};
+	46A1546B131F5A6200EBBB69 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 46A15467131F5A3000EBBB69 /* 1x1blue.png */;
+	};
+	46A15478131F5B8700EBBB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* DeceptiCamViewController.h */;
+		name = "DeceptiCamViewController.h: 30";
+		rLen = 0;
+		rLoc = 748;
+		rType = 0;
+		vrLen = 1065;
+		vrLoc = 0;
+	};
+	46E1740513104589001C311E /* DeceptiCam */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = DeceptiCam;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	46E17411131045CA001C311E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	46E17412131045CA001C311E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	46EDA0AD1324143400A96613 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 46EDA0A71324130800A96613 /* speaker.png */;
+	};
+	46EDA179132498BE00A96613 /* GraphicsHelpers.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {712, 579}}";
+			sepNavSelRange = "{427, 0}";
+			sepNavVisRange = "{0, 427}";
+		};
+	};
+	46EDA17A132498BE00A96613 /* GraphicsHelpers.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {785, 578}}";
+			sepNavSelRange = "{1264, 0}";
+			sepNavVisRange = "{0, 1356}";
+		};
+	};
+	46EDA1AC13249D7100A96613 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 46EDA09A132412B600A96613 /* speaker@2x.png */;
+	};
+	46EDA1AD13249D7100A96613 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A15292131DEFCF00EBBB69 /* LACallButton.m */;
+		name = "LACallButton.m: 38";
+		rLen = 0;
+		rLoc = 948;
+		rType = 0;
+		vrLen = 999;
+		vrLoc = 0;
+	};
+	46EDA1AE13249D7100A96613 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A153D0131F337900EBBB69 /* LACallButtonContainer.h */;
+		name = "LACallButtonContainer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 231;
+		vrLoc = 0;
+	};
+	46EDA1AF13249D7100A96613 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46EDA1B013249D7100A96613 /* WSMethodInvocation.h */;
+		name = "WSMethodInvocation.h: 759";
+		rLen = 0;
+		rLoc = 23937;
+		rType = 0;
+		vrLen = 2289;
+		vrLoc = 22766;
+	};
+	46EDA1B013249D7100A96613 /* WSMethodInvocation.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = WSMethodInvocation.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/WebServicesCore.framework/Headers/WSMethodInvocation.h;
+		sourceTree = "<absolute>";
+	};
+	46EDA1B313249D7100A96613 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */;
+		name = "DeceptiCamViewController.m: 92";
+		rLen = 0;
+		rLoc = 4216;
+		rType = 0;
+		vrLen = 3690;
+		vrLoc = 1222;
+	};
+	46EDA1E713249F0F00A96613 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* DeceptiCam-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIStatusBarHidden,
+		);
+		name = "/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	46FB69591328898D005A4A1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 463AFA6F1317692A0019E904 /* LACamManager.m */;
+		name = "LACamManager.m: 141";
+		rLen = 0;
+		rLoc = 5236;
+		rType = 0;
+		vrLen = 1714;
+		vrLoc = 3950;
+	};
+	46FB695A1328898D005A4A1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46EDA179132498BE00A96613 /* GraphicsHelpers.h */;
+		name = "GraphicsHelpers.h: 20";
+		rLen = 0;
+		rLoc = 427;
+		rType = 0;
+		vrLen = 427;
+		vrLoc = 0;
+	};
+	46FB695B1328898D005A4A1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46EDA17A132498BE00A96613 /* GraphicsHelpers.m */;
+		name = "GraphicsHelpers.m: 36";
+		rLen = 0;
+		rLoc = 1264;
+		rType = 0;
+		vrLen = 1356;
+		vrLoc = 0;
+	};
+	46FB695C1328898D005A4A1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A153D1131F337900EBBB69 /* LACallButtonContainer.m */;
+		name = "LACallButtonContainer.m: 73";
+		rLen = 0;
+		rLoc = 2921;
+		rType = 0;
+		vrLen = 2743;
+		vrLoc = 995;
+	};
+	46FB695D1328898D005A4A1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A153D1131F337900EBBB69 /* LACallButtonContainer.m */;
+		name = "LACallButtonContainer.m: 74";
+		rLen = 0;
+		rLoc = 2447;
+		rType = 0;
+		vrLen = 1810;
+		vrLoc = 1383;
+	};
+}
