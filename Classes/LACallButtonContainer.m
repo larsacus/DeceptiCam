@@ -42,7 +42,7 @@
 	rect = CGRectInset(rect, kInsetWidth, kInsetWidth);
 	
 	CGContextBeginPath(context);
-	CGContextSetGrayFillColor(context, 0.1, 0.7);
+	CGContextSetGrayFillColor(context, 0.1, 0.0);
 	CGContextMoveToPoint(context, CGRectGetMinX(rect) + radius, CGRectGetMinY(rect));
 	CGContextAddArc(context, CGRectGetMaxX(rect) - radius, CGRectGetMinY(rect) + radius, radius, 3 * M_PI / 2, 0, 0);
 	CGContextAddArc(context, CGRectGetMaxX(rect) - radius, CGRectGetMaxY(rect) - radius, radius, 0, M_PI / 2, 0);
@@ -52,31 +52,81 @@
 	CGContextClosePath(context);
 	CGContextFillPath(context);
 	CGColorRef blackLineColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
-	CGColorRef grayLineColor = [UIColor colorWithWhite:0.7 alpha:0.3].CGColor;
+	CGColorRef darkGrayLineColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5].CGColor;
+	CGColorRef grayLineColor = [UIColor colorWithWhite:0.5 alpha:0.8].CGColor;
+	CGColorRef lightGrayLineColor = [UIColor colorWithWhite:0.5 alpha:0.5].CGColor;
 	UIGraphicsPushContext(context);
 	
+	float horLineXStart = 0.0f;
+	float horLineXEnd = rect.size.width+2*kInsetWidth;
+	float horLineY = rect.size.height/2;
+	
+	float vertLine1X = rect.size.width/3;
+	float vertLineYStart = 0.0f;
+	float vertLineYEnd = rect.size.height+2*kInsetWidth;
+	
+	float vertLine2X = 2*(vertLine1X);
+	
+	//horizontal line
 	
 	drawHalfPxStroke(context, 
-					 CGPointMake(0+kInsetWidth, rect.size.height/2+0.5), 
-					 CGPointMake(rect.size.width+kInsetWidth/2, rect.size.height/2+0.5), 
-					 grayLineColor);
-	
-
+					 CGPointMake(horLineXStart					, horLineY+1.0), 
+					 CGPointMake(horLineXEnd					, horLineY+1.0), 
+					 lightGrayLineColor);
 	drawHalfPxStroke(context, 
-					 CGPointMake(rect.size.width/3+0.75, kInsetWidth), 
-					 CGPointMake(rect.size.width/3+0.75, rect.size.height+kInsetWidth/2), 
+					 CGPointMake(horLineXStart					, horLineY+0.5), 
+					 CGPointMake(horLineXEnd					, horLineY+0.5), 
 					 grayLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(horLineXStart					, horLineY-0.5), 
+					 CGPointMake(horLineXEnd					, horLineY-0.5), 
+					 darkGrayLineColor);
 	
+	
+	//first vertical line
 	
 	drawHalfPxStroke(context, 
-					 CGPointMake(2*(rect.size.width/3)+0.75, kInsetWidth), 
-					 CGPointMake(2*(rect.size.width/3)+0.75, rect.size.height+kInsetWidth/2), 
+					 CGPointMake(vertLine1X+1.25			, vertLineYStart), 
+					 CGPointMake(vertLine1X+1.25			, vertLineYEnd), 
+					 lightGrayLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine1X+0.75			, vertLineYStart), 
+					 CGPointMake(vertLine1X+0.75			, vertLineYEnd), 
 					 grayLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine1X-0.25			, vertLineYStart), 
+					 CGPointMake(vertLine1X-0.25			, vertLineYEnd), 
+					 darkGrayLineColor);
+	
+	//second vertical line
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine2X+1.0		, vertLineYStart), 
+					 CGPointMake(vertLine2X+1.0		, vertLineYEnd), 
+					 lightGrayLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine2X+0.5		, vertLineYStart), 
+					 CGPointMake(vertLine2X+0.5		, vertLineYEnd), 
+					 grayLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine2X-0.5		, vertLineYStart), 
+					 CGPointMake(vertLine2X-0.5		, vertLineYEnd), 
+					 darkGrayLineColor);
+	
+	//all black lines need to be drawn on top
+	drawHalfPxStroke(context, 
+					 CGPointMake(horLineXStart		, horLineY), 
+					 CGPointMake(horLineXEnd		, horLineY), 
+					 blackLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine1X			, vertLineYStart), 
+					 CGPointMake(vertLine1X			, vertLineYEnd), 
+					 blackLineColor);
+	drawHalfPxStroke(context, 
+					 CGPointMake(vertLine2X			, vertLineYStart), 
+					 CGPointMake(vertLine2X			, vertLineYEnd), 
+					 blackLineColor);
 	
 	
-	drawHalfPxStroke(context, CGPointMake(0+kInsetWidth, rect.size.height/2), CGPointMake(rect.size.width+kInsetWidth/2, rect.size.height/2), blackLineColor);
-	drawHalfPxStroke(context, CGPointMake(rect.size.width/3, kInsetWidth), CGPointMake(rect.size.width/3, rect.size.height+kInsetWidth/2), blackLineColor);
-	drawHalfPxStroke(context, CGPointMake(2*(rect.size.width/3), kInsetWidth), CGPointMake(2*(rect.size.width/3), rect.size.height+kInsetWidth/2), blackLineColor);
 	/*
 	CGColorRef redColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5].CGColor;
 	CGContextSetFillColorWithColor(context, redColor);
@@ -86,9 +136,9 @@
 }
 
 
-/*- (void)layoutSubviews{
+- (void)layoutSubviews{
 	
-}*/
+}
 
 - (void)dealloc {
     [super dealloc];

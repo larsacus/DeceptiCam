@@ -68,11 +68,12 @@
 	[[[self buttonContainer] layer] setShadowColor:[UIColor blackColor].CGColor];
 	[[[self buttonContainer] layer] setShadowOpacity:0.5];
 	[[[self buttonContainer] layer] setShadowRadius:2.0f];
-	
+	*/
 	
 	[[self topLeft] setBackgroundImage:[[UIImage imageNamed:@"1x1black"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateNormal];
 	[[self topLeft] setBackgroundImage:[[UIImage imageNamed:@"1x1blue"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateHighlighted];
 	
+	/*
 	[[self topCenter] setBackgroundImage:[[UIImage imageNamed:@"1x1black"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateNormal];
 	[[self topCenter] setBackgroundImage:[[UIImage imageNamed:@"1x1blue"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateHighlighted];
 	
@@ -90,8 +91,14 @@
 	*/
 	 
 	LACallButtonContainer *callButtonContainer = [[LACallButtonContainer alloc] initWithFrame:CGRectMake(22.0, 124.0, 275.0, 211.0)];
-	
+	[callButtonContainer removeFromSuperview];
+	[callButtonContainer addSubview:[self topLeft]];
+	[callButtonContainer sendSubviewToBack:[self topLeft]];
 	[[self view] addSubview:callButtonContainer];
+	[[callButtonContainer layer] setBorderColor:[UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.7].CGColor];
+	[[callButtonContainer layer] setBorderWidth:2.0];
+	[[callButtonContainer layer] setCornerRadius:10.0];
+	[[callButtonContainer layer] setMasksToBounds:YES];
 	//[[self view] bringSubviewToFront:callButtonContainer];
 	
 	[callButtonContainer release];

@@ -29,9 +29,9 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1160, 2002}}";
-			sepNavSelRange = "{4216, 0}";
-			sepNavVisRange = "{1222, 3690}";
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 1820}}";
+			sepNavSelRange = "{4529, 0}";
+			sepNavVisRange = "{1723, 3081}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -98,8 +98,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 321167759;
-			PBXWorkspaceStateSaveDate = 321167759;
+			PBXPerProjectTemplateStateSaveDate = 321510852;
+			PBXWorkspaceStateSaveDate = 321510852;
 		};
 		perUserProjectItems = {
 			46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */ = 46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */;
@@ -109,18 +109,18 @@
 			46A15447131F511E00EBBB69 /* PBXBookmark */ = 46A15447131F511E00EBBB69 /* PBXBookmark */;
 			46A1546B131F5A6200EBBB69 /* PBXBookmark */ = 46A1546B131F5A6200EBBB69 /* PBXBookmark */;
 			46A15478131F5B8700EBBB69 /* PBXTextBookmark */ = 46A15478131F5B8700EBBB69 /* PBXTextBookmark */;
+			46A8D48D1329F46C008C50C5 /* PBXTextBookmark */ = 46A8D48D1329F46C008C50C5 /* PBXTextBookmark */;
+			46A8D48E1329F46C008C50C5 /* PBXTextBookmark */ = 46A8D48E1329F46C008C50C5 /* PBXTextBookmark */;
+			46A8D48F1329F46C008C50C5 /* PBXTextBookmark */ = 46A8D48F1329F46C008C50C5 /* PBXTextBookmark */;
 			46EDA0AD1324143400A96613 /* PBXBookmark */ = 46EDA0AD1324143400A96613 /* PBXBookmark */;
 			46EDA1AC13249D7100A96613 /* PBXBookmark */ = 46EDA1AC13249D7100A96613 /* PBXBookmark */;
 			46EDA1AD13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AD13249D7100A96613 /* PBXTextBookmark */;
 			46EDA1AE13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AE13249D7100A96613 /* PBXTextBookmark */;
 			46EDA1AF13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AF13249D7100A96613 /* PBXTextBookmark */;
-			46EDA1B313249D7100A96613 /* PBXTextBookmark */ = 46EDA1B313249D7100A96613 /* PBXTextBookmark */;
 			46EDA1E713249F0F00A96613 /* PlistBookmark */ = 46EDA1E713249F0F00A96613 /* PlistBookmark */;
 			46FB69591328898D005A4A1C /* PBXTextBookmark */ = 46FB69591328898D005A4A1C /* PBXTextBookmark */;
 			46FB695A1328898D005A4A1C /* PBXTextBookmark */ = 46FB695A1328898D005A4A1C /* PBXTextBookmark */;
 			46FB695B1328898D005A4A1C /* PBXTextBookmark */ = 46FB695B1328898D005A4A1C /* PBXTextBookmark */;
-			46FB695C1328898D005A4A1C /* PBXTextBookmark */ = 46FB695C1328898D005A4A1C /* PBXTextBookmark */;
-			46FB695D1328898D005A4A1C /* PBXTextBookmark */ = 46FB695D1328898D005A4A1C /* PBXTextBookmark */;
 		};
 		sourceControlManager = 46E17411131045CA001C311E /* Source Control */;
 		userBuildSettings = {
@@ -193,9 +193,9 @@
 	};
 	46A153D1131F337900EBBB69 /* LACallButtonContainer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1153, 1287}}";
-			sepNavSelRange = "{2447, 0}";
-			sepNavVisRange = "{1383, 1810}";
+			sepNavIntBoundsRect = "{{0, 0}, {852, 1794}}";
+			sepNavSelRange = "{3310, 1}";
+			sepNavVisRange = "{2088, 1379}";
 		};
 	};
 	46A153F8131F438700EBBB69 /* PBXTextBookmark */ = {
@@ -225,6 +225,36 @@
 		rType = 0;
 		vrLen = 1065;
 		vrLoc = 0;
+	};
+	46A8D48D1329F46C008C50C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */;
+		name = "DeceptiCamViewController.m: 98";
+		rLen = 0;
+		rLoc = 4529;
+		rType = 0;
+		vrLen = 3081;
+		vrLoc = 1723;
+	};
+	46A8D48E1329F46C008C50C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A153D1131F337900EBBB69 /* LACallButtonContainer.m */;
+		name = "LACallButtonContainer.m: 100";
+		rLen = 0;
+		rLoc = 2344;
+		rType = 0;
+		vrLen = 1843;
+		vrLoc = 2072;
+	};
+	46A8D48F1329F46C008C50C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 46A153D1131F337900EBBB69 /* LACallButtonContainer.m */;
+		name = "LACallButtonContainer.m: 98";
+		rLen = 1;
+		rLoc = 3310;
+		rType = 0;
+		vrLen = 1379;
+		vrLoc = 2088;
 	};
 	46E1740513104589001C311E /* DeceptiCam */ = {
 		isa = PBXExecutable;
@@ -331,16 +361,6 @@
 		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/WebServicesCore.framework/Headers/WSMethodInvocation.h;
 		sourceTree = "<absolute>";
 	};
-	46EDA1B313249D7100A96613 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */;
-		name = "DeceptiCamViewController.m: 92";
-		rLen = 0;
-		rLoc = 4216;
-		rType = 0;
-		vrLen = 3690;
-		vrLoc = 1222;
-	};
 	46EDA1E713249F0F00A96613 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* DeceptiCam-Info.plist */;
@@ -382,25 +402,5 @@
 		rType = 0;
 		vrLen = 1356;
 		vrLoc = 0;
-	};
-	46FB695C1328898D005A4A1C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 46A153D1131F337900EBBB69 /* LACallButtonContainer.m */;
-		name = "LACallButtonContainer.m: 73";
-		rLen = 0;
-		rLoc = 2921;
-		rType = 0;
-		vrLen = 2743;
-		vrLoc = 995;
-	};
-	46FB695D1328898D005A4A1C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 46A153D1131F337900EBBB69 /* LACallButtonContainer.m */;
-		name = "LACallButtonContainer.m: 74";
-		rLen = 0;
-		rLoc = 2447;
-		rType = 0;
-		vrLen = 1810;
-		vrLoc = 1383;
 	};
 }
