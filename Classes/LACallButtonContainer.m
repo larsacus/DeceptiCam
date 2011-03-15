@@ -27,6 +27,7 @@
     if (self) {
         // Initialization code.
 		self.backgroundColor = [UIColor clearColor];
+		self.userInteractionEnabled = NO;
 	}
     return self;
 }

@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="6"/>
+			<integer value="13"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -128,7 +128,7 @@
 								</object>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
-								<float key="IBUIAlpha">0.80000001192092896</float>
+								<float key="IBUIAlpha">0.89999997615814209</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -138,15 +138,6 @@
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
-								<double key="IBUITitleEdgeInsets.top">74</double>
-								<double key="IBUITitleEdgeInsets.bottom">21</double>
-								<double key="IBUITitleEdgeInsets.left">-29</double>
-								<double key="IBUITitleEdgeInsets.right">26</double>
-								<double key="IBUIImageEdgeInsets.top">-7</double>
-								<double key="IBUIImageEdgeInsets.bottom">8</double>
-								<double key="IBUIImageEdgeInsets.left">21</double>
-								<double key="IBUIImageEdgeInsets.right">-20</double>
-								<string key="IBUINormalTitle">mute</string>
 								<reference key="IBUIHighlightedTitleColor" ref="555019269"/>
 								<reference key="IBUINormalTitleColor" ref="555019269"/>
 								<object class="NSColor" key="IBUINormalTitleShadowColor" id="498043205">
@@ -165,7 +156,7 @@
 								<reference key="NSSuperview" ref="171866820"/>
 								<reference key="IBUIBackgroundColor" ref="1003490609"/>
 								<bool key="IBUIOpaque">NO</bool>
-								<float key="IBUIAlpha">0.5</float>
+								<float key="IBUIAlpha">0.89999997615814209</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -174,15 +165,8 @@
 									<double key="NSSize">12</double>
 									<int key="NSfFlags">16</int>
 								</object>
-								<double key="IBUITitleEdgeInsets.top">74</double>
-								<double key="IBUITitleEdgeInsets.bottom">21</double>
-								<double key="IBUITitleEdgeInsets.left">-65</double>
-								<double key="IBUITitleEdgeInsets.right">1</double>
-								<double key="IBUIImageEdgeInsets.top">-9</double>
-								<double key="IBUIImageEdgeInsets.bottom">8</double>
-								<double key="IBUIImageEdgeInsets.left">13</double>
-								<double key="IBUIImageEdgeInsets.right">-20</double>
-								<string key="IBUINormalTitle">keypad</string>
+								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<reference key="IBUIHighlightedTitleColor" ref="555019269"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -201,7 +185,7 @@
 								<reference key="NSSuperview" ref="171866820"/>
 								<reference key="IBUIBackgroundColor" ref="1003490609"/>
 								<bool key="IBUIOpaque">NO</bool>
-								<float key="IBUIAlpha">0.5</float>
+								<float key="IBUIAlpha">0.89999997615814209</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -211,6 +195,7 @@
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<reference key="IBUIHighlightedTitleColor" ref="555019269"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -229,11 +214,12 @@
 								<reference key="NSSuperview" ref="171866820"/>
 								<reference key="IBUIBackgroundColor" ref="1003490609"/>
 								<bool key="IBUIOpaque">NO</bool>
-								<float key="IBUIAlpha">0.5</float>
+								<float key="IBUIAlpha">0.89999997615814209</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="960858232"/>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<reference key="IBUIHighlightedTitleColor" ref="555019269"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -252,11 +238,12 @@
 								<reference key="NSSuperview" ref="171866820"/>
 								<reference key="IBUIBackgroundColor" ref="1003490609"/>
 								<bool key="IBUIOpaque">NO</bool>
-								<float key="IBUIAlpha">0.5</float>
+								<float key="IBUIAlpha">0.89999997615814209</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="960858232"/>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<reference key="IBUIHighlightedTitleColor" ref="555019269"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -275,11 +262,12 @@
 								<reference key="NSSuperview" ref="171866820"/>
 								<reference key="IBUIBackgroundColor" ref="1003490609"/>
 								<bool key="IBUIOpaque">NO</bool>
-								<float key="IBUIAlpha">0.5</float>
+								<float key="IBUIAlpha">0.89999997615814209</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="960858232"/>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<reference key="IBUIHighlightedTitleColor" ref="555019269"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
