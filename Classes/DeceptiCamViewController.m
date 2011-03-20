@@ -92,35 +92,40 @@
 	 
 	UIView *buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(22.0f, 124.0f, 275.0f, 211.0f)];
 	
-	float buttonHeight = buttonContainer.frame.size.height/2-2.0f;
-	float buttonWidth = buttonContainer.frame.size.width/3-4.0f/3;
-	[[self topLeft] setFrame:CGRectMake(0+1.0f, 
-										0, 
+    float xOffset = 2.0f;
+    float yOffset = 2.0f;
+	float buttonHeight = buttonContainer.frame.size.height/2-yOffset;
+	float buttonWidth = buttonContainer.frame.size.width/3-xOffset*2/3;
+    float spacerWidth = 0.0f;
+    float spacerHeight = 0.0f;
+    
+	[[self topLeft] setFrame:CGRectMake(0 + xOffset, 
+										0 + yOffset, 
 										buttonWidth, 
 										buttonHeight)
 	 ];
-	[[self topCenter] setFrame:CGRectMake(buttonWidth+1.0f, 
-										  0, 
+	[[self topCenter] setFrame:CGRectMake(buttonWidth + xOffset + spacerWidth, 
+										  0 + yOffset, 
 										  buttonWidth, 
 										  buttonHeight)
 	 ];
-	[[self topRight] setFrame:CGRectMake(2*(buttonWidth)+1.0f, 
-										 0, 
+	[[self topRight] setFrame:CGRectMake(2*(buttonWidth) + xOffset + spacerWidth, 
+										 0 + yOffset, 
 										 buttonWidth, 
 										 buttonHeight)
 	 ];
-	[[self bottomLeft] setFrame:CGRectMake(0, 
-										   buttonHeight, 
+	[[self bottomLeft] setFrame:CGRectMake(xOffset, 
+										   buttonHeight + yOffset + spacerHeight/2, 
 										   buttonWidth, 
 										   buttonHeight)
 	 ];
-	[[self bottomCenter] setFrame:CGRectMake(buttonWidth+0.5f,
-											 buttonHeight,
+	[[self bottomCenter] setFrame:CGRectMake(buttonWidth + xOffset + spacerWidth,
+											 buttonHeight + yOffset + spacerHeight/2,
 											 buttonWidth, 
 											 buttonHeight)
 	 ];
-	[[self bottomRight] setFrame:CGRectMake(2*(buttonWidth)+1.0f,
-											buttonHeight,
+	[[self bottomRight] setFrame:CGRectMake(2*(buttonWidth) + xOffset + spacerWidth,
+											buttonHeight + yOffset + spacerHeight/2,
 											buttonWidth, 
 											buttonHeight)
 	 ];
@@ -133,16 +138,13 @@
 	[buttonContainer addSubview:[self bottomCenter]];
 	[buttonContainer addSubview:[self bottomRight]];
 	
-	//LACallButtonContainer *callButtonContainer = [[LACallButtonContainer alloc] initWithFrame:CGRectMake(22.0, 124.0, 275.0, 211.0)];
 	LACallButtonContainer *callButtonContainer = [[LACallButtonContainer alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 275.0f, 211.0f)];
-	//[callButtonContainer removeFromSuperview];
 	[buttonContainer addSubview:callButtonContainer];
 	[buttonContainer bringSubviewToFront:callButtonContainer];
 	[[self view] addSubview:buttonContainer];
-	[[buttonContainer layer] setBorderColor:[UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.7].CGColor];
-	[[buttonContainer layer] setBorderWidth:2.0];
-	[[buttonContainer layer] setCornerRadius:10.0];
-	//[[buttonContainer layer] setMasksToBounds:YES];
+	//[[buttonContainer layer] setBorderColor:[UIColor redColor].CGColor];
+	//[[buttonContainer layer] setBorderWidth:2.0];
+	//[[buttonContainer layer] setCornerRadius:20.0];
 	//[[self view] bringSubviewToFront:callButtonContainer];
 	
 	[buttonContainer release];

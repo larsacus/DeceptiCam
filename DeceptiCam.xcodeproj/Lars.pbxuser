@@ -29,9 +29,9 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1160, 2249}}";
-			sepNavSelRange = "{6865, 0}";
-			sepNavVisRange = "{4210, 777}";
+			sepNavIntBoundsRect = "{{0, 0}, {1160, 2587}}";
+			sepNavSelRange = "{4272, 0}";
+			sepNavVisRange = "{3460, 1817}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -98,13 +98,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 321850234;
-			PBXWorkspaceStateSaveDate = 321850234;
+			PBXPerProjectTemplateStateSaveDate = 322285418;
+			PBXWorkspaceStateSaveDate = 322285418;
 		};
 		perUserProjectItems = {
 			461215F5132F0F9A00373DEA /* PBXTextBookmark */ = 461215F5132F0F9A00373DEA /* PBXTextBookmark */;
 			461215FA132F1D3A00373DEA /* PBXTextBookmark */ = 461215FA132F1D3A00373DEA /* PBXTextBookmark */;
-			4612160D132F203700373DEA /* PBXTextBookmark */ = 4612160D132F203700373DEA /* PBXTextBookmark */;
 			46121655133190FD00373DEA /* PBXTextBookmark */ = 46121655133190FD00373DEA /* PBXTextBookmark */;
 			46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */ = 46A152B5131DF3CD00EBBB69 /* PBXTextBookmark */;
 			46A152B6131DF3CD00EBBB69 /* PBXTextBookmark */ = 46A152B6131DF3CD00EBBB69 /* PBXTextBookmark */;
@@ -113,6 +112,7 @@
 			46A15447131F511E00EBBB69 /* PBXBookmark */ = 46A15447131F511E00EBBB69 /* PBXBookmark */;
 			46A1546B131F5A6200EBBB69 /* PBXBookmark */ = 46A1546B131F5A6200EBBB69 /* PBXBookmark */;
 			46A15478131F5B8700EBBB69 /* PBXTextBookmark */ = 46A15478131F5B8700EBBB69 /* PBXTextBookmark */;
+			46AED8851335AF88004E805C /* PBXTextBookmark */ = 46AED8851335AF88004E805C /* PBXTextBookmark */;
 			46EDA0AD1324143400A96613 /* PBXBookmark */ = 46EDA0AD1324143400A96613 /* PBXBookmark */;
 			46EDA1AC13249D7100A96613 /* PBXBookmark */ = 46EDA1AC13249D7100A96613 /* PBXBookmark */;
 			46EDA1AD13249D7100A96613 /* PBXTextBookmark */ = 46EDA1AD13249D7100A96613 /* PBXTextBookmark */;
@@ -145,16 +145,6 @@
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 46;
-	};
-	4612160D132F203700373DEA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */;
-		name = "DeceptiCamViewController.m: 94";
-		rLen = 0;
-		rLoc = 4395;
-		rType = 0;
-		vrLen = 3003;
-		vrLoc = 2514;
 	};
 	46121655133190FD00373DEA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -265,6 +255,16 @@
 		rType = 0;
 		vrLen = 1065;
 		vrLoc = 0;
+	};
+	46AED8851335AF88004E805C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DeceptiCamViewController.m */;
+		name = "DeceptiCamViewController.m: 95";
+		rLen = 0;
+		rLoc = 4272;
+		rType = 0;
+		vrLen = 1817;
+		vrLoc = 3460;
 	};
 	46E1740513104589001C311E /* DeceptiCam */ = {
 		isa = PBXExecutable;

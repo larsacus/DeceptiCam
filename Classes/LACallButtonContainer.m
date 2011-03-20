@@ -28,6 +28,11 @@
         // Initialization code.
 		self.backgroundColor = [UIColor clearColor];
 		self.userInteractionEnabled = NO;
+        self.layer.masksToBounds = YES;
+        self.layer.borderColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.7].CGColor;
+        self.layer.borderWidth = 2.0f;
+        self.layer.cornerRadius= 10.0f;
+
 	}
     return self;
 }
@@ -133,11 +138,6 @@
 	CGContextSetFillColorWithColor(context, redColor);
 	CGContextFillRect(context, self.bounds);
 	 */
-	
-}
-
-
-- (void)layoutSubviews{
 	
 }
 

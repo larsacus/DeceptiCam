@@ -332,7 +332,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>46121655133190FD00373DEA</string>
+										<string>46AED8851335AF88004E805C</string>
 										<key>history</key>
 										<array>
 											<string>46A152B5131DF3CD00EBBB69</string>
@@ -352,7 +352,7 @@
 											<string>46FB695B1328898D005A4A1C</string>
 											<string>461215F5132F0F9A00373DEA</string>
 											<string>461215FA132F1D3A00373DEA</string>
-											<string>4612160D132F203700373DEA</string>
+											<string>46121655133190FD00373DEA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -364,14 +364,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1001, 625}}</string>
+								<string>{{0, 0}, {1001, 618}}</string>
 								<key>RubberWindowFrame</key>
 								<string>365 59 1283 965 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>625pt</string>
+							<string>618pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -384,14 +384,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 630}, {1001, 294}}</string>
+								<string>{{0, 623}, {1001, 301}}</string>
 								<key>RubberWindowFrame</key>
 								<string>365 59 1283 965 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>294pt</string>
+							<string>301pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -410,9 +410,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>461215BC132F0B9400373DEA</string>
+				<string>46AED8801335AF6E004E805C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>461215BD132F0B9400373DEA</string>
+				<string>46AED8811335AF6E004E805C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -550,10 +550,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>461215D0132F0E6400373DEA</string>
-		<string>461215CB132F0E3F00373DEA</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>46E1748B1310640A001C311E</string>
 		<string>/Users/Lars/Documents/iPhone-Apps/DeceptiCam/DeceptiCam.xcodeproj</string>
 	</array>
@@ -579,7 +575,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DeceptiCamViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -596,8 +592,6 @@
 							<string>371pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -637,7 +631,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>46E1748B1310640A001C311E</string>
-				<string>461215BE132F0B9400373DEA</string>
+				<string>46AED8821335AF6E004E805C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
