@@ -35,5 +35,7 @@
 @property (nonatomic, assign) UIButton *bottomCenter;
 @property (nonatomic, assign) UIButton *bottomRight;
 
+- (IBAction)toggleMovieMode:(id)sender;
+
 @end
 

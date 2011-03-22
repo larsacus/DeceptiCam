@@ -185,6 +185,14 @@
 	}
 }
 
+- (IBAction)toggleMovieMode:(id)sender{
+    UIButton *movieButton = (UIButton*)sender;
+    bool movieMode = (movieButton.state == UIControlStateHighlighted || movieButton.state == UIControlStateSelected);
+    [movieButton setSelected:movieMode];
+    [movieButton setHighlighted:movieMode];
+    movieMode ? [[self cameraManager] switchToVideoMode] : [[self cameraManager] switchToPhotoMode];
+}
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
