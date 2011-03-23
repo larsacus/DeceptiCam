@@ -16,12 +16,13 @@
 
 @synthesize captureSession =			_captureSession;
 @synthesize captureDevice =				_captureDevice;
-@synthesize stillCaptureDeviceInput =	_stillCaptureDeviceInput;
-@synthesize videoCaptureDeviceInput =	_videoCaptureDeviceInput;
-@synthesize audioCaptureDeviceInput =	_audioCaptureDeviceInput;
-@synthesize videoOutput =				_videoOutput;
-@synthesize stillOutput =				_stillOutput;
-@synthesize movieFileOutput =			_movieFileOutput;
+@synthesize stillCaptureDeviceInput =	_stillCaptureDeviceInput;   //still
+
+@synthesize videoCaptureDeviceInput =	_videoCaptureDeviceInput;   //still and movie
+@synthesize audioCaptureDeviceInput =	_audioCaptureDeviceInput;   //movie
+
+@synthesize stillOutput =				_stillOutput;               //still
+@synthesize movieFileOutput =			_movieFileOutput;           //movie
 
 - (void)createNewSessionWithVideo:(BOOL)hasVideo{
 	#if !TARGET_IPHONE_SIMULATOR
@@ -40,62 +41,76 @@
 	
 	if (hasVideo) {
 		//creates video outputs and inputs
+        NSLog(@"Setting capture session preset to video");
 		[[self captureSession] setSessionPreset:AVCaptureSessionPresetHigh];
 		
 		//creates video input if it doesn't exist
 		if (![self videoCaptureDeviceInput]) {
+            NSLog(@"Creating Video Input");
 			_videoCaptureDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:[AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo] error:nil];
 		}
 		
 		//creates audio input if it doesn't exist
 		if (![self audioCaptureDeviceInput]) {
+            NSLog(@"Creating Audio Input");
 			_audioCaptureDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:[AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeAudio] error:nil];
 		}
 		
 		//creates movie file output for video
 		if (![self movieFileOutput]) {
+            NSLog(@"Creating Movie File Output");
 			_movieFileOutput = [[AVCaptureMovieFileOutput alloc] init];
 		}
 		
 		//adds inputs to video capture session
 		if ([[self captureSession] canAddInput:[self videoCaptureDeviceInput]]) {
+            NSLog(@"Adding Video Input to Capture Session");
 			[[self captureSession] addInput:[self videoCaptureDeviceInput]];
 		}
 		if ([[self captureSession] canAddInput:[self audioCaptureDeviceInput]]) {
+            NSLog(@"Adding Audio Input to Capture Session");
 			[[self captureSession] addInput:[self audioCaptureDeviceInput]];
 		}
 		
 		//adds movie file output to capture session
 		if ([[self captureSession] canAddOutput:[self movieFileOutput]]) {
+            NSLog(@"Adding Movie File Output to Capture Session");
 			[[self captureSession] addOutput:[self movieFileOutput]];
 		}
 	}
 	else {
+        NSLog(@"Setting capture session preset to photo");
 		[[self captureSession] setSessionPreset:AVCaptureSessionPresetPhoto];
 		
 		//create device input
 		if (![self stillCaptureDeviceInput]) {
+            NSLog(@"Creating Capture Input");
 			_stillCaptureDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:[AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo] error:nil];
 		}
 		
 		//creates still image output if it doesn't exist
 		if (![self stillOutput]) {
+            NSLog(@"Creating still output");
 			_stillOutput = [[AVCaptureStillImageOutput alloc] init];
 		}
 		
 		//add still input to capture session
 		if ([[self captureSession] canAddInput:[self stillCaptureDeviceInput]]) {
+            NSLog(@"Adding still input to capture session");
 			[[self captureSession] addInput:[self stillCaptureDeviceInput]];
 		}
 		
 		//adds still image output to capture session
 		if ([[self captureSession] canAddOutput:[self stillOutput]]) {
+            NSLog(@"Adding still image output to capture session");
 			[[self captureSession] addOutput:[self stillOutput]];
 		}
 	}
 	
 	if (![[self captureSession] isRunning]) {
+        NSLog(@"Starting capture session");
 		[[self captureSession] startRunning];
+        NSLog(@"Done!");
 	}
 	
 	#endif
@@ -303,6 +318,33 @@
 - (void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
 	NSLog(@"Finished saving file");
 }
+
+- (void)didReceiveMemoryWarning{
+    NSLog(@"Received memory warning - clearing out unused resources");
+    if ([self isMovieMode]) {
+        if ([self stillOutput]) {
+            [[self stillOutput] release];
+            _stillOutput = nil;
+        }
+        if ([self stillCaptureDeviceInput]) {
+            [[self stillCaptureDeviceInput] release];
+            _stillCaptureDeviceInput = nil;
+        }
+    }
+    else{
+        if ([self movieFileOutput]) {
+            [[self movieFileOutput] release];
+            _movieFileOutput = nil;
+        }
+        if ([self audioCaptureDeviceInput]) {
+            [[self audioCaptureDeviceInput] release];
+            _audioCaptureDeviceInput = nil;
+        }
+    }
+    
+    [super didReceiveMemoryWarning];
+}
+
 
 @end
 

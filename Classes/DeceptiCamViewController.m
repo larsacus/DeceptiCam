@@ -24,6 +24,10 @@
 @synthesize bottomLeft = _bottomLeft;
 @synthesize bottomCenter = _bottomCenter;
 @synthesize bottomRight = _bottomRight;
+@synthesize timeLabel = _timeLabel;
+@synthesize nameLabel = _nameLabel;
+@synthesize backgroundImageView = _backgroundImageView;
+@synthesize contactImageView = _contactImageView;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

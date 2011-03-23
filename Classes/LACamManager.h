@@ -25,7 +25,6 @@
 @property (nonatomic,retain) AVCaptureDeviceInput		*stillCaptureDeviceInput;
 @property (nonatomic,retain) AVCaptureDeviceInput		*videoCaptureDeviceInput;
 @property (nonatomic,retain) AVCaptureDeviceInput		*audioCaptureDeviceInput;
-@property (nonatomic,retain) AVCaptureMovieFileOutput	*videoOutput;
 @property (nonatomic,retain) AVCaptureStillImageOutput	*stillOutput;
 @property (nonatomic,retain) AVCaptureMovieFileOutput	*movieFileOutput;
 
