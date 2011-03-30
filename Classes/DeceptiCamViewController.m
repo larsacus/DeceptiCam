@@ -10,7 +10,8 @@
 #import "LACallButtonContainer.h"
 #import <QuartzCore/QuartzCore.h>
 
-
+#define kBorderWidth 2.0f
+#define kCornerRadius 8.0f
 
 @implementation DeceptiCamViewController
 
@@ -93,8 +94,20 @@
 	[[self bottomRight] setBackgroundImage:[[UIImage imageNamed:@"1x1black"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateNormal];
 	[[self bottomRight] setBackgroundImage:[[UIImage imageNamed:@"1x1blue"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateHighlighted];
 	
-	 
-	UIView *buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(22.0f, 124.0f, 275.0f, 211.0f)];
+    
+	UIView *buttonContainerBorder = [[UIView alloc] initWithFrame:CGRectMake(22.0f, 124.0f, 275.0f, 211.0f)]; 
+	UIView *buttonContainer = [[UIView alloc] initWithFrame:[buttonContainerBorder frame]];
+    
+    [[buttonContainerBorder layer] setCornerRadius:kCornerRadius];
+    [[buttonContainerBorder layer] setBorderWidth:kBorderWidth];
+    //[[buttonContainerBorder layer] setBorderColor:[UIColor colorWithWhite:0.1 alpha:0.6].CGColor];
+    [[buttonContainerBorder layer] setBorderColor:[UIColor colorWithWhite:0.1 alpha:0.6].CGColor];
+    
+    [[buttonContainerBorder layer] setCornerRadius:kCornerRadius];
+    [[buttonContainerBorder layer] setMasksToBounds:YES];
+    //[[buttonContainer layer] setBorderWidth:0.0f];
+    //[[buttonContainer layer] setMasksToBounds:YES];
+    
 	
     float xOffset = 2.0f;
     float yOffset = 2.0f;
@@ -134,25 +147,30 @@
 											buttonHeight)
 	 ];
 	
-	//[[buttonContainer layer] setMasksToBounds:YES];
+    //set frame here so it doesn't interfere with above geometry
+    //[buttonContainer setFrame:CGRectInset([buttonContainer frame], 2.0, 2.0)];
+    
 	[buttonContainer addSubview:[self topLeft]];
 	[buttonContainer addSubview:[self topCenter]];
 	[buttonContainer addSubview:[self topRight]];
 	[buttonContainer addSubview:[self bottomLeft]];
 	[buttonContainer addSubview:[self bottomCenter]];
 	[buttonContainer addSubview:[self bottomRight]];
+    
+    [[buttonContainer layer] setCornerRadius:kCornerRadius-kBorderWidth];
+    [[buttonContainer layer] setBounds:CGRectInset(CGRectMake(0, 0, [buttonContainer frame].size.width, [buttonContainer frame].size.height), kBorderWidth, kBorderWidth)];
+    [[buttonContainer layer] setMasksToBounds:YES];
 	
-	LACallButtonContainer *callButtonContainer = [[LACallButtonContainer alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 275.0f, 211.0f)];
-	[buttonContainer addSubview:callButtonContainer];
-	[buttonContainer bringSubviewToFront:callButtonContainer];
+	//LACallButtonContainer *callButtonLines = [[LACallButtonContainer alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 275.0f, 211.0f)];
+    LACallButtonContainer *callButtonLines = [[LACallButtonContainer alloc] initWithFrame:[buttonContainerBorder frame]];
+    
+    [[self view] addSubview:buttonContainerBorder];
 	[[self view] addSubview:buttonContainer];
-	//[[buttonContainer layer] setBorderColor:[UIColor redColor].CGColor];
-	//[[buttonContainer layer] setBorderWidth:2.0];
-	//[[buttonContainer layer] setCornerRadius:20.0];
-	//[[self view] bringSubviewToFront:callButtonContainer];
+    [[self view] addSubview:callButtonLines];
 	
-	[buttonContainer release];
-	[callButtonContainer release];
+    [buttonContainerBorder release];
+	[buttonContainer release];//self.view retains
+	[callButtonLines release];//buttonContainer retains
 }
 
 

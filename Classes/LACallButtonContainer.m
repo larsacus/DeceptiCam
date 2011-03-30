@@ -28,10 +28,10 @@
         // Initialization code.
 		self.backgroundColor = [UIColor clearColor];
 		self.userInteractionEnabled = NO;
-        self.layer.masksToBounds = YES;
-        self.layer.borderColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.7].CGColor;
-        self.layer.borderWidth = 2.0f;
-        self.layer.cornerRadius= 10.0f;
+        //self.layer.masksToBounds = YES;
+        //self.layer.borderColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.7].CGColor;
+        //self.layer.borderWidth = 2.0f;
+        //self.layer.cornerRadius= 8.0f;
 
 	}
     return self;
@@ -47,7 +47,7 @@
 	CGContextRef context = UIGraphicsGetCurrentContext();   
 	rect = CGRectInset(rect, kInsetWidth, kInsetWidth);
 	
-	CGContextBeginPath(context);
+	/*CGContextBeginPath(context);
 	CGContextSetGrayFillColor(context, 0.1, 0.0);
 	CGContextMoveToPoint(context, CGRectGetMinX(rect) + radius, CGRectGetMinY(rect));
 	CGContextAddArc(context, CGRectGetMaxX(rect) - radius, CGRectGetMinY(rect) + radius, radius, 3 * M_PI / 2, 0, 0);
@@ -57,21 +57,22 @@
 	
 	CGContextClosePath(context);
 	CGContextFillPath(context);
+     */
 	CGColorRef blackLineColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0].CGColor;
 	CGColorRef darkGrayLineColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5].CGColor;
 	CGColorRef grayLineColor = [UIColor colorWithWhite:0.5 alpha:0.8].CGColor;
 	CGColorRef lightGrayLineColor = [UIColor colorWithWhite:0.5 alpha:0.5].CGColor;
-	UIGraphicsPushContext(context);
+	//UIGraphicsPushContext(context);
 	
 	float horLineXStart = 0.0f;
 	float horLineXEnd = rect.size.width+2*kInsetWidth;
-	float horLineY = rect.size.height/2;
+	float horLineY = rect.size.height/2 + 1;
 	
-	float vertLine1X = rect.size.width/3;
+	float vertLine1X = rect.size.width/3 + 1;
 	float vertLineYStart = 0.0f;
 	float vertLineYEnd = rect.size.height+2*kInsetWidth;
 	
-	float vertLine2X = 2*(vertLine1X);
+	float vertLine2X = (2*(vertLine1X) - 2) + 1;
 	
 	//horizontal line
 	
