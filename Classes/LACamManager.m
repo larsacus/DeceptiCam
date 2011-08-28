@@ -323,21 +323,21 @@
     NSLog(@"Received memory warning - clearing out unused resources");
     if ([self isMovieMode]) {
         if ([self stillOutput]) {
-            [[self stillOutput] release];
+            [_stillOutput release];
             _stillOutput = nil;
         }
         if ([self stillCaptureDeviceInput]) {
-            [[self stillCaptureDeviceInput] release];
+            [_stillCaptureDeviceInput release];
             _stillCaptureDeviceInput = nil;
         }
     }
     else{
         if ([self movieFileOutput]) {
-            [[self movieFileOutput] release];
+            [_movieFileOutput release];
             _movieFileOutput = nil;
         }
         if ([self audioCaptureDeviceInput]) {
-            [[self audioCaptureDeviceInput] release];
+            [_audioCaptureDeviceInput release];
             _audioCaptureDeviceInput = nil;
         }
     }
