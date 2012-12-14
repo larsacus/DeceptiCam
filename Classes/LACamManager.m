@@ -341,8 +341,6 @@
             _audioCaptureDeviceInput = nil;
         }
     }
-    
-    [super didReceiveMemoryWarning];
 }
 
 

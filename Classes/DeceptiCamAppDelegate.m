@@ -24,7 +24,7 @@
 
     // Add the view controller's view to the window and display.
 		
-    [self.window addSubview:viewController.view];
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
 
     return YES;
