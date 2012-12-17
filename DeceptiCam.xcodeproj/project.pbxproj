@@ -19,6 +19,7 @@
 		463AFA711317692A0019E904 /* LACamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 463AFA6F1317692A0019E904 /* LACamManager.m */; };
 		463AFAB013176CB60019E904 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463AFAAF13176CB60019E904 /* CoreMedia.framework */; };
 		463AFB011319A7F10019E904 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463AFB001319A7F10019E904 /* AssetsLibrary.framework */; };
+		4641EBC1167EE47E00A4E590 /* End@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4641EBC0167EE47E00A4E590 /* End@2x.png */; };
 		4642C091167AEFA30039EE16 /* LAGlossyStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642C090167AEFA30039EE16 /* LAGlossyStatusView.m */; };
 		4642C093167AF3BE0039EE16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4642C092167AF3BE0039EE16 /* Default-568h@2x.png */; };
 		46A1528A131AF49A00EBBB69 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A15289131AF49A00EBBB69 /* AudioToolbox.framework */; };
@@ -63,6 +64,7 @@
 		463AFA701317692A0019E904 /* LACamManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LACamManager.h; sourceTree = "<group>"; };
 		463AFAAF13176CB60019E904 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		463AFB001319A7F10019E904 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4641EBC0167EE47E00A4E590 /* End@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "End@2x.png"; sourceTree = "<group>"; };
 		4642C08F167AEFA30039EE16 /* LAGlossyStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAGlossyStatusView.h; sourceTree = "<group>"; };
 		4642C090167AEFA30039EE16 /* LAGlossyStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAGlossyStatusView.m; sourceTree = "<group>"; };
 		4642C092167AF3BE0039EE16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				46EDA0891324129C00A96613 /* Images */,
 				46A15442131F50DD00EBBB69 /* 1x1black.png */,
 				46A15467131F5A3000EBBB69 /* 1x1blue.png */,
+				4641EBC0167EE47E00A4E590 /* End@2x.png */,
 				2899E5210DE3E06400AC0155 /* DeceptiCamViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* DeceptiCam-Info.plist */,
@@ -286,6 +289,7 @@
 				46EDA0A6132412B600A96613 /* speaker@2x.png in Resources */,
 				46EDA0A81324130800A96613 /* speaker.png in Resources */,
 				4642C093167AF3BE0039EE16 /* Default-568h@2x.png in Resources */,
+				4641EBC1167EE47E00A4E590 /* End@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

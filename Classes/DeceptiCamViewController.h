@@ -42,6 +42,7 @@
 @property (nonatomic, assign) UILabel *nameLabel;
 @property (nonatomic, assign) UIImageView *backgroundImageView;
 @property (nonatomic, assign) UIImageView *contactImageView;
+@property (retain, nonatomic) IBOutlet UIButton *endButton;
 
 - (IBAction)toggleMovieMode:(id)sender;
 

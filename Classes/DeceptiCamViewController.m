@@ -74,6 +74,8 @@
 	[[[self buttonContainer] layer] setShadowOpacity:0.5];
 	[[[self buttonContainer] layer] setShadowRadius:2.0f];
 	*/
+    UIImage *redButton = [UIImage imageNamed:@"end.png"];
+    [self.endButton setBackgroundImage:redButton forState:UIControlStateNormal];
 	
 	[[self topLeft] setBackgroundImage:[[UIImage imageNamed:@"1x1black"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateNormal];
 	[[self topLeft] setBackgroundImage:[[UIImage imageNamed:@"1x1blue"] stretchableImageWithLeftCapWidth:0 topCapHeight:0] forState:UIControlStateHighlighted];
@@ -205,4 +207,13 @@
     movieMode ? [[self cameraManager] switchToVideoMode] : [[self cameraManager] switchToPhotoMode];
 }
 
+- (void)dealloc {
+    [_endButton release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    _endButton = nil;
+    [self setEndButton:nil];
+    [super viewDidUnload];
+}
 @end
