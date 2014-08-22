@@ -41,7 +41,6 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code.
-	float radius = 8.0f;
 	
 	rect = self.bounds;
 	CGContextRef context = UIGraphicsGetCurrentContext();   
@@ -142,9 +141,6 @@
 	
 }
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

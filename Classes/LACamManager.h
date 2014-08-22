@@ -9,24 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface LACamManager : NSObject <AVCaptureFileOutputRecordingDelegate> {
-	AVCaptureSession			*_captureSession;
-	AVCaptureDevice				*_captureDevice;
-	AVCaptureDeviceInput		*_stillCaptureDeviceInput;
-	AVCaptureDeviceInput		*_videoCaptureDeviceInput;
-	AVCaptureDeviceInput		*_audioCaptureDeviceInput;
-	AVCaptureMovieFileOutput	*_videoOutput;
-	AVCaptureStillImageOutput	*_stillOutput;
-	AVCaptureMovieFileOutput	*_movieFileOutput;
-}
+@interface LACamManager : NSObject <AVCaptureFileOutputRecordingDelegate> 
 
-@property (nonatomic,retain) AVCaptureSession			*captureSession;
-@property (nonatomic,retain) AVCaptureDevice			*captureDevice;
-@property (nonatomic,retain) AVCaptureDeviceInput		*stillCaptureDeviceInput;
-@property (nonatomic,retain) AVCaptureDeviceInput		*videoCaptureDeviceInput;
-@property (nonatomic,retain) AVCaptureDeviceInput		*audioCaptureDeviceInput;
-@property (nonatomic,retain) AVCaptureStillImageOutput	*stillOutput;
-@property (nonatomic,retain) AVCaptureMovieFileOutput	*movieFileOutput;
+@property (nonatomic,strong) AVCaptureSession			*captureSession;
+@property (nonatomic,strong) AVCaptureDevice			*captureDevice;
+@property (nonatomic,strong) AVCaptureDeviceInput		*stillCaptureDeviceInput;
+@property (nonatomic,strong) AVCaptureDeviceInput		*videoCaptureDeviceInput;
+@property (nonatomic,strong) AVCaptureDeviceInput		*audioCaptureDeviceInput;
+@property (nonatomic,strong) AVCaptureStillImageOutput	*stillOutput;
+@property (nonatomic,strong) AVCaptureMovieFileOutput	*movieFileOutput;
 
 - (void)createNewSessionWithVideo:(BOOL)hasVideo;
 - (BOOL)isMovieMode;
@@ -34,10 +25,11 @@
 - (void)stopRecordingMovie;
 - (void)switchToPhotoMode;
 - (void)switchToVideoMode;
-- (void)takeStill;
+- (void)initiateStillCapture;
 - (NSURL *)getNewMovieURL;
 - (AVCaptureConnection *)connectionWithMediaType:(NSString *)mediaType fromConnections:(NSArray *)connections;
 - (void)correctVideoConnectionOrientationWithCurrentOrientation;
+- (void)haltStillCapture;
 
 @end
 #endif

@@ -11,10 +11,6 @@
 
 @implementation DeceptiCamAppDelegate
 
-@synthesize window;
-@synthesize viewController;
-@synthesize audioSession = _audioSession;
-
 #pragma mark -
 #pragma mark Application lifecycle
 
@@ -24,7 +20,7 @@
 
     // Add the view controller's view to the window and display.
 		
-    self.window.rootViewController = viewController;
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 
     return YES;
@@ -79,11 +75,6 @@
 }
 
 
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
-}
 
 
 @end

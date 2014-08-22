@@ -12,17 +12,13 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+@interface LACamManager ()
+
+@property (nonatomic, strong) NSTimer *stillTimer;
+
+@end
+
 @implementation LACamManager
-
-@synthesize captureSession =			_captureSession;
-@synthesize captureDevice =				_captureDevice;
-@synthesize stillCaptureDeviceInput =	_stillCaptureDeviceInput;   //still
-
-@synthesize videoCaptureDeviceInput =	_videoCaptureDeviceInput;   //still and movie
-@synthesize audioCaptureDeviceInput =	_audioCaptureDeviceInput;   //movie
-
-@synthesize stillOutput =				_stillOutput;               //still
-@synthesize movieFileOutput =			_movieFileOutput;           //movie
 
 - (void)createNewSessionWithVideo:(BOOL)hasVideo{
 	#if !TARGET_IPHONE_SIMULATOR
@@ -37,6 +33,11 @@
 		for (AVCaptureOutput *output in outputDevices) {
 			[[self captureSession] removeOutput:output];
 		}
+        
+        NSArray *inputDevices = [[self captureSession] inputs];
+        for (AVCaptureInput *input in inputDevices) {
+            [[self captureSession] removeInput:input];
+        }
 	}
 	
 	if (hasVideo) {
@@ -116,14 +117,30 @@
 	#endif
 }
 
-- (void)takeStill{
+- (void)initiateStillCapture{
 	//route all audio to the receiver
 	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
 	[[AVAudioSession sharedInstance] setActive:YES error:nil];
 	UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_None;
 	AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,sizeof (audioRouteOverride),&audioRouteOverride);
 	
-	if ([[self captureSession] sessionPreset] == AVCaptureSessionPresetPhoto && [self stillOutput]) {
+	[self takeStillPhoto];
+
+	if (self.stillTimer == nil) {
+        self.stillTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                           target:self
+                                                         selector:@selector(takeStillPhoto)
+                                                         userInfo:nil
+                                                          repeats:YES];
+    }
+}
+
+- (void)haltStillCapture {
+    [self cancelStillTimer];
+}
+
+- (void)takeStillPhoto {
+    if ([[self captureSession] sessionPreset] == AVCaptureSessionPresetPhoto && [self stillOutput]) {
 		AVCaptureConnection *stillConnection = nil;
 		for (AVCaptureConnection *connection in [[self stillOutput] connections]) {
 			for (AVCaptureInputPort *port in [connection inputPorts]) {
@@ -151,17 +168,15 @@
 				 [library writeImageToSavedPhotosAlbum:[image CGImage]
 										   orientation:(ALAssetOrientation)[image imageOrientation]
 									   completionBlock:^(NSURL *assetURL, NSError *error){
-										  if (error) {
-											  if ([self respondsToSelector:@selector(captureStillImageFailedWithError:)]) {
-												  [self captureStillImageFailedWithError:error];
-											  }
-											  if (!error) {
-												  NSLog(@"Image saved to camera roll");
-											  }
-										  } 
+                                           if (error) {
+                                               if ([self respondsToSelector:@selector(captureStillImageFailedWithError:)]) {
+                                                   [self captureStillImageFailedWithError:error];
+                                               }
+                                           }
+                                           if (!error) {
+                                               NSLog(@"Image saved to camera roll at %@", assetURL);
+                                           }
 									   }];
-				 [library release];
-				 [image release];
 			 }
 			 else if (error) {
 				 if ([self respondsToSelector:@selector(captureStillImageFailedWithError:)]) {
@@ -173,22 +188,21 @@
 	else {
 		NSLog(@"Cannot take still photo in video mode");
 	}
+}
 
-	//route all audio back to the default
+- (void)cancelStillTimer {
+    //route all audio back to the default
 	[[AVAudioSession sharedInstance] setActive:NO error:nil];
+    [self.stillTimer invalidate];
+    self.stillTimer = nil;
 }
 
 - (BOOL)isMovieMode{
-	if([[self captureSession] sessionPreset] == AVCaptureSessionPresetHigh){
-		return YES;
-	}
-	else{
-		return NO;
-	}
+    return ([[self captureSession] sessionPreset] == AVCaptureSessionPresetHigh);
 }
 
 - (void)startRecordingMovie{
-	if ([[self captureSession] sessionPreset] == AVCaptureSessionPresetHigh && ![[self movieFileOutput] isRecording]) {
+	if (![[self movieFileOutput] isRecording]) {
 		[self correctVideoConnectionOrientationWithCurrentOrientation];
 		
 		NSLog(@"Starting to record movie to file");
@@ -197,12 +211,12 @@
 	}
 	else {
 		//error
-		NSLog(@"Cannot start movie capture in photo mode");
+		NSLog(@"Cannot start movie capture while currently recording");
 	}
 }
 
 - (void)stopRecordingMovie{
-	if ([[self captureSession] sessionPreset] == AVCaptureSessionPresetHigh && [[self movieFileOutput] isRecording]) {
+	if ([self isMovieMode] && [[self movieFileOutput] isRecording]) {
 		[[self movieFileOutput] stopRecording];
 	}
 	else {
@@ -218,13 +232,10 @@
 	if ([fileManager fileExistsAtPath:outputPath]) {
 		NSError *error;
 		if ([fileManager removeItemAtPath:outputPath error:&error] == NO) {
-			if ([self respondsToSelector:@selector(someOtherError:)]) {
-				[self someOtherError:error];
-			}            
+			NSLog(@"Error removing file at path %@: %@, %@", outputPath, error, [error userInfo]);
 		}
 	}
-	[outputPath release];
-	return [outputURL autorelease];
+	return outputURL;
 }
 
 - (void)switchToVideoMode{
@@ -253,7 +264,7 @@
 	for ( AVCaptureConnection *connection in connections ) {
 		for ( AVCaptureInputPort *port in [connection inputPorts] ) {
 			if ( [[port mediaType] isEqual:mediaType] ) {
-				return [[connection retain] autorelease];
+				return connection;
 			}
 		}
 	}
@@ -263,9 +274,31 @@
 - (void)correctVideoConnectionOrientationWithCurrentOrientation{
 	for (AVCaptureConnection *connection in [[self movieFileOutput] connections] ) {
 		if ([connection isVideoOrientationSupported]) {
-			[connection setVideoOrientation:[[UIDevice currentDevice] orientation]];
+            UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+            AVCaptureVideoOrientation avFoundationOrientation = [self avCaptureOrientationFromDeviceOrientation:deviceOrientation];
+			[connection setVideoOrientation:avFoundationOrientation];
 		}
 	}
+}
+
+- (AVCaptureVideoOrientation)avCaptureOrientationFromDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
+    switch (deviceOrientation) {
+        case UIDeviceOrientationLandscapeLeft:
+            return AVCaptureVideoOrientationLandscapeLeft;
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            return AVCaptureVideoOrientationLandscapeRight;
+            break;
+        case UIDeviceOrientationPortrait:
+            return AVCaptureVideoOrientationPortrait;
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            return AVCaptureVideoOrientationPortraitUpsideDown;
+            break;
+        default:
+            return AVCaptureVideoOrientationLandscapeLeft;
+            break;
+    }
 }
 
 #pragma mark -
@@ -288,20 +321,16 @@
 		if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputFileURL]) {
 			[library writeVideoAtPathToSavedPhotosAlbum:outputFileURL
 										completionBlock:^(NSURL *assetURL, NSError *error){
-											if (error && [self respondsToSelector:@selector(assetLibraryError:forURL:)]) {
-												[self assetLibraryError:error forURL:assetURL];
-											}
-											if (!error) {
-												NSLog(@"Video saved to camera roll");
+                                            if (error) {
+                                                NSLog(@"Error writing video file to path %@: %@, %@", assetURL, error, [error userInfo]);
+                                            } else {
+												NSLog(@"Video saved to camera roll at %@", assetURL);
 											}
 										}];
 		} else {
-			if ([self respondsToSelector:@selector(cannotWriteToAssetLibrary)]) {
-				[self cannotWriteToAssetLibrary];
-			}
+			NSLog(@"Video is somehow not compatible with saved photos album: %@", outputFileURL);
 		}
 		
-		[library release];
 	}
 	else {
 		NSLog(@"Movie not recorded successfully");
@@ -314,6 +343,10 @@
 	NSLog(@"Did start to record file");
 }
 
+- (void)captureStillImageFailedWithError:(NSError *)error {
+    NSLog(@"Still capture failed with error: %@, %@", error, [error userInfo]);
+}
+
 //completion handler for saving movie to photo roll
 - (void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
 	NSLog(@"Finished saving file");
@@ -323,21 +356,17 @@
     NSLog(@"Received memory warning - clearing out unused resources");
     if ([self isMovieMode]) {
         if ([self stillOutput]) {
-            [_stillOutput release];
             _stillOutput = nil;
         }
         if ([self stillCaptureDeviceInput]) {
-            [_stillCaptureDeviceInput release];
             _stillCaptureDeviceInput = nil;
         }
     }
     else{
         if ([self movieFileOutput]) {
-            [_movieFileOutput release];
             _movieFileOutput = nil;
         }
         if ([self audioCaptureDeviceInput]) {
-            [_audioCaptureDeviceInput release];
             _audioCaptureDeviceInput = nil;
         }
     }

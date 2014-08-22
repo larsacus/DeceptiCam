@@ -11,38 +11,24 @@
 #import "LACamManager.h"
 
 @interface DeceptiCamViewController : UIViewController {
-#if !TARGET_IPHONE_SIMULATOR
-	LACamManager *_cameraManager;
-#endif
-	IBOutlet UIView *_buttonContainer;
-	IBOutlet UIButton *_topLeft;
-	IBOutlet UIButton *_topCenter;
-	IBOutlet UIButton *_topRight;
-	IBOutlet UIButton *_bottomLeft;
-	IBOutlet UIButton *_bottomCenter;
-	IBOutlet UIButton *_bottomRight;
-    IBOutlet UILabel *_timeLabel;
-    IBOutlet UILabel *_nameLabel;
-    IBOutlet UIImageView *_backgroundImageView;
-    IBOutlet UIImageView *_contactImageView;
 	
 }
 
 #if !TARGET_IPHONE_SIMULATOR
-@property (nonatomic,retain) LACamManager *cameraManager;
+@property (nonatomic,strong) LACamManager *cameraManager;
 #endif
-@property (nonatomic, assign) UIView *buttonContainer;
-@property (nonatomic, assign) UIButton *topLeft;
-@property (nonatomic, assign) UIButton *topCenter;
-@property (nonatomic, assign) UIButton *topRight;
-@property (nonatomic, assign) UIButton *bottomLeft;
-@property (nonatomic, assign) UIButton *bottomCenter;
-@property (nonatomic, assign) UIButton *bottomRight;
-@property (nonatomic, assign) UILabel *timeLabel;
-@property (nonatomic, assign) UILabel *nameLabel;
-@property (nonatomic, assign) UIImageView *backgroundImageView;
-@property (nonatomic, assign) UIImageView *contactImageView;
-@property (retain, nonatomic) IBOutlet UIButton *endButton;
+@property (nonatomic, strong) UIView *buttonContainer;
+@property (nonatomic, strong) UIButton *topLeft;
+@property (nonatomic, strong) UIButton *topCenter;
+@property (nonatomic, strong) UIButton *topRight;
+@property (nonatomic, strong) UIButton *bottomLeft;
+@property (nonatomic, strong) UIButton *bottomCenter;
+@property (nonatomic, strong) UIButton *bottomRight;
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UIImageView *backgroundImageView;
+@property (nonatomic, strong) UIImageView *contactImageView;
+@property (nonatomic, strong) IBOutlet UIButton *endButton;
 
 - (IBAction)toggleMovieMode:(id)sender;
 

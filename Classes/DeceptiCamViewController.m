@@ -15,21 +15,6 @@
 
 @implementation DeceptiCamViewController
 
-#if !TARGET_IPHONE_SIMULATOR
-@synthesize cameraManager = _cameraManager;
-#endif
-@synthesize buttonContainer = _buttonContainer;
-@synthesize topLeft = _topLeft;
-@synthesize topCenter = _topCenter;
-@synthesize topRight = _topRight;
-@synthesize bottomLeft = _bottomLeft;
-@synthesize bottomCenter = _bottomCenter;
-@synthesize bottomRight = _bottomRight;
-@synthesize timeLabel = _timeLabel;
-@synthesize nameLabel = _nameLabel;
-@synthesize backgroundImageView = _backgroundImageView;
-@synthesize contactImageView = _contactImageView;
-
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -169,29 +154,27 @@
     [[self view] addSubview:buttonContainerBorder];
 	[[self view] addSubview:buttonContainer];
     [[self view] addSubview:callButtonLines];
-	
-    [buttonContainerBorder release];
-	[buttonContainer release];//self.view retains
-	[callButtonLines release];//buttonContainer retains
 }
 
 -(void)handleProximitySensorChange{
 	NSLog(@"Handling proximity change");
 	if([[UIDevice currentDevice] proximityState]){
 		NSLog(@"Initiating recording");
-		[self performSelector:@selector(takeStill) withObject:nil afterDelay:1];
+		[self performSelector:@selector(initiateCapture) withObject:nil afterDelay:1];
 	}
 	else {
 		if ([[self cameraManager] isMovieMode]) {
 			[[self cameraManager] stopRecordingMovie];
-		}
+		} else {
+            [[self cameraManager] haltStillCapture];
+        }
 	}
 }
 
--(void)takeStill{
+-(void)initiateCapture{
 	if (![[self cameraManager] isMovieMode]) {
 		NSLog(@"Capturing still");
-		[[self cameraManager] takeStill];
+		[[self cameraManager] initiateStillCapture];
 	}
 	else {
 		NSLog(@"Starting to record movie");
@@ -207,10 +190,6 @@
     movieMode ? [[self cameraManager] switchToVideoMode] : [[self cameraManager] switchToPhotoMode];
 }
 
-- (void)dealloc {
-    [_endButton release];
-    [super dealloc];
-}
 - (void)viewDidUnload {
     _endButton = nil;
     [self setEndButton:nil];

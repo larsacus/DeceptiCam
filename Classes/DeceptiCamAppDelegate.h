@@ -11,15 +11,11 @@
 
 @class DeceptiCamViewController;
 
-@interface DeceptiCamAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    DeceptiCamViewController *viewController;
-	AVAudioSession *_audioSession;
-}
+@interface DeceptiCamAppDelegate : NSObject <UIApplicationDelegate>
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet DeceptiCamViewController *viewController;
-@property (nonatomic, assign) AVAudioSession *audioSession;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet DeceptiCamViewController *viewController;
+@property (nonatomic, strong) AVAudioSession *audioSession;
 
 @end
 
